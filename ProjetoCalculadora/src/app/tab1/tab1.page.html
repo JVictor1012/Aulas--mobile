@@ -24,38 +24,38 @@
   <ion-card>
   <ion-grid>
     <ion-row>
-      <ion-button shape="round" (click)="limpar()">AC</ion-button>
-      <ion-button shape="round" (click)="addParentesisL()" >(</ion-button >
-      <ion-button shape="round" (click)="addParentesisR()" >)</ion-button >
-      <ion-button shape="round" fill="outline" (click)="addDivisao()">/</ion-button>
+      <ion-col> <ion-button shape="round" (click)="limpar()">AC</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addParentesisL()" >(</ion-button > </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addParentesisR()" >)</ion-button > </ion-col>
+      <ion-col> <ion-button shape="round" fill="outline" (click)="addDivisao()">/</ion-button> </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-button shape="round" (click)="addNum(7)">7</ion-button >
-      <ion-button shape="round" (click)="addNum(8)">8</ion-button>
-      <ion-button shape="round" (click)="addNum(9)">9</ion-button>
-      <ion-button shape="round" fill="outline" (click)="addMultiplicacao()">X</ion-button>
+      <ion-col> <ion-button shape="round" (click)="addNum(7)">7</ion-button > </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(8)">8</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(9)">9</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" fill="outline" (click)="addMultiplicacao()">X</ion-button> </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-button shape="round" (click)="addNum(4)">4</ion-button>
-      <ion-button shape="round" (click)="addNum(5)">5</ion-button>
-      <ion-button shape="round" (click)="addNum(6)">6</ion-button>
-      <ion-button shape="round" fill="outline" (click)="addSubtracao()">-</ion-button>
+      <ion-col> <ion-button shape="round" (click)="addNum(4)">4</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(5)">5</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(6)">6</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" fill="outline" (click)="addSubtracao()">-</ion-button> </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-button shape="round" (click)="addNum(1)">1</ion-button>
-      <ion-button shape="round" (click)="addNum(2)">2</ion-button>
-      <ion-button shape="round" (click)="addNum(3)">3</ion-button>
-      <ion-button shape="round" fill="outline" (click)="addSoma()">+</ion-button>
+      <ion-col> <ion-button shape="round" (click)="addNum(1)">1</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(2)">2</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="addNum(3)">3</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" fill="outline" (click)="addSoma()">+</ion-button> </ion-col>
     </ion-row>
 
     <ion-row>
-      <ion-button shape="round" (click)="addNum(0)">0</ion-button>
-      <ion-button shape="round">.</ion-button>
-      <ion-button shape="round">←</ion-button>
-      <ion-button shape="round" fill="outline" (click)="calcular()">=</ion-button>
+      <ion-col> <ion-button shape="round" (click)="addNum(0)">0</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round">.</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" (click)="limparUM()">←</ion-button> </ion-col>
+      <ion-col> <ion-button shape="round" fill="outline" (click)="calcular()">=</ion-button> </ion-col>
     </ion-row>
   </ion-grid>
 </ion-card>

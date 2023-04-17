@@ -28,8 +28,16 @@ export class Tab1Page {
   
   }
 
+  limparUM(){
+    let novalista = this.expressao.split('');
+    novalista.pop();
+    this.expressao = novalista.join('');
+  } 
+  
+
   addNum(num: number){
     this.expressao += num ;
+    return num;
   }
 
   addParentesisL(){
@@ -59,7 +67,10 @@ export class Tab1Page {
   }
 
   calcular(){
-    this.expressao = ''
+    let resultado = eval(this.expressao)
+    console.log(resultado)
+
+    this.expressao = resultado
   }
 
 }
