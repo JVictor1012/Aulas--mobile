@@ -43,9 +43,7 @@
 @import '~@ionic/angular/css/flex-utils.css';
 
 @media (prefers-color-scheme: dark) {
-    :root {
-      /* dark mode variables go here */
-    }
+    
   }
 
 :root {
@@ -93,6 +91,5 @@ ion-datetime {
   --background: #fff1f2;
   --background-rgb: 255, 241, 242;
 
-  border-radius: 16px;
   box-shadow: rgba(var(--ion-color-rose-rgb), 0.3) 0px 10px 15px -3px;
 }
