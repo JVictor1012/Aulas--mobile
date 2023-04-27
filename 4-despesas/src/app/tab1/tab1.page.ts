@@ -5,6 +5,7 @@ import { Route, Router } from '@angular/router';
 import { IonicModule } from '@ionic/angular';
 import { ExploreContainerComponent } from '../explore-container/explore-container.component';
 import { TipoDespesa } from '../model/despesa';
+import { DespesaService } from '../model/despesa.service';
 
 @Component({
   selector: 'app-tab1',
@@ -18,7 +19,10 @@ export class Tab1Page {
   formgroup : FormGroup
   tipo : string[]
 
-  constructor(private formbuilder : FormBuilder, private router: Router) {
+  constructor(private despesasService : DespesaService,
+              private formbuilder : FormBuilder, 
+              private router: Router) {
+
     this.formgroup = formbuilder.group({
       motivo: ['', [Validators.required, Validators.minLength(2)]], //[valor inicial, [validações]]
       valor: ['',[Validators.required, Validators.min(1)]],
@@ -32,7 +36,12 @@ export class Tab1Page {
   }
 
   adicionar(){
-    console.log(this.formgroup.value)
+    
+    const despesa = this.formgroup.value
+    if( despesa != null){
+      this.despesasService.adicionar(despesa)
+      console.log(this.despesasService.despesas)
+    }  
   }
 
   ver(){
