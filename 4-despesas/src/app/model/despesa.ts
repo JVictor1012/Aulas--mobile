@@ -16,6 +16,7 @@ export class Despesa{
     tipo : string;
     valor: number;
     data: string;
+    concluida : boolean;
 
 
     constructor(){
@@ -23,6 +24,7 @@ export class Despesa{
         this.valor = 0;
         this.tipo = TipoDespesa.OUTROS;
         this.data = new Date().toISOString();
+        this.concluida = false;
 
     }
 }

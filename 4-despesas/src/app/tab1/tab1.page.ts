@@ -18,6 +18,7 @@ export class Tab1Page {
 
   formgroup : FormGroup
   tipo : string[]
+  concluida : boolean;
 
   constructor(private despesasService : DespesaService,
               private formbuilder : FormBuilder, 
@@ -31,6 +32,7 @@ export class Tab1Page {
     })
 
     this.tipo = Object.values(TipoDespesa)
+    this.concluida = false;
     
 
   }
